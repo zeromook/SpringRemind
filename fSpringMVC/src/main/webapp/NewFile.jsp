@@ -4,16 +4,9 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>index.jsp</title>
+<title>Insert title here</title>
 </head>
 <body>
-	너무 졸려요 너무 졸려요
-	
-	웹을 시작합시다
-	<hr/>
-	
-	<a href="start.아무거나써도됨">MVC스타토</a>
-	<a href="hello.아무거나써도됨">hello</a>
-	
+
 </body>
 </html>

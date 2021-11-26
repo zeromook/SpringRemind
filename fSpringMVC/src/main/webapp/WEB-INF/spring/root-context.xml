@@ -5,4 +5,25 @@
 	
 	<!-- Root Context: defines shared resources visible to all other web components -->
 		
+		
+	<!-- 원래는 여기에 작성하지 않음
+				실제로는 데이터베이스 DB에서 값을 가져와서 사용함!!! 이렇게는 쓸일없음 -->
+				
+	<bean id="memberVO" class="com.javaclass.model.MemberVO">
+		<property name="id" value="0001" /><!-- set을 붙이고 첫글자를 대문자로 만든 메소드를 불러옴 setId() -->
+		<property name="name" value="영묵" />
+		<property name="age" value="24" />
+		<property name="state" value="true" />
+	</bean>			
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+		
 </beans>

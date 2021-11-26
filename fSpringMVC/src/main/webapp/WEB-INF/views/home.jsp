@@ -13,5 +13,7 @@
 
 <P>  The time on the server is ${serverTime}. </P>
 <p> hello my name is ${name}</p>
+<hr/>
+<p>message : ${message}</p>
 </body>
 </html>

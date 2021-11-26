@@ -1,7 +1,11 @@
 package com.javaclass.controller;
 
 import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
+
+import com.javaclass.model.MemberVO;
 
 @Controller
 @RequestMapping("re")
@@ -38,6 +42,26 @@ public class RequestMappingController {
 		System.out.println("(-c.do와 파라미터 요청 필요-)");
 	}
 	
+	
+	@RequestMapping(value="request.do",method=RequestMethod.POST)  //이렇게 하면 GET방식으로 전달은 오류발생 POST만 허용함
+	public void test3(MemberVO vo) { //@ModelAttribute("vo")이거를 매개변수 칸에 넣어두면 jsp에서 MemberVO를 부를때 vo로 부를수있음 하지만 기본은 memberVO 기존 클래스명에서 앞글자만 소문자로바꿈
+		System.out.println("아이디 : "+vo.getId());
+		System.out.println("이름 : "+vo.getName());
+		System.out.println("나이 : "+vo.getAge());
+		
+		//원래 자바에서는
+		/*
+		 * String id = request.getParameter("id");
+		 * String name = request.getParameter("id");
+		 * int age = Integer.parseInt(request.getParameter("age"));
+		 * 
+		 * MemberVO vo = new MemberVO();
+		 * vo.setId(id);
+		 * vo.setName(name);
+		 * vo.setAge(age);
+		 * 
+		 * */
+	}
 	
 	
 	

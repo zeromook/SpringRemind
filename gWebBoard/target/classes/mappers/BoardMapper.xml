@@ -44,16 +44,13 @@
 		]]>
 	</select>
 	
-	<!-- 	
-	<select id="getBoardList" resultMap="boardResult"  >
-			
+	<select id="getBoardList" resultType="board" >
 			SELECT *
 			FROM BOARD
 			ORDER BY SEQ DESC
-		
-	</select> -->
-	<!-- 검색 추가  -->
-	<select id="getBoardList" resultType="board"  parameterType="hashmap">
+	</select>
+	
+<!-- 	<select id="getBoardList" resultType="board"  parameterType="hashmap">
 		
 		SELECT *
 		FROM BOARD
@@ -65,5 +62,5 @@
 		ORDER BY SEQ DESC
 		
 	</select>
-	
+	 -->
 </mapper>

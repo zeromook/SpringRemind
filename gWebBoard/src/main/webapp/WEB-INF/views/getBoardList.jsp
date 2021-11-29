@@ -6,19 +6,19 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>±Û ¸ñ·Ï</title>
+<title>ê²Œì‹œíŒ ëª©ë¡ë³´ê¸°</title>
 </head>
 <body>
-		<h1>°Ô½Ã±Û ¸ñ·Ï</h1>
+		<h1>ëª©ë¡ë³´ê¸°</h1>
 
 		
 	<table border="1">
 			<tr>
-				<th bgcolor="orange" width="100">¹øÈ£</th>
-				<th bgcolor="orange" width="200">Á¦¸ñ</th>
-				<th bgcolor="orange" width="150">ÀÛ¼ºÀÚ</th>
-				<th bgcolor="orange" width="150">µî·ÏÀÏ</th>
-				<th bgcolor="orange" width="100">Á¶È¸¼ö</th>
+				<th bgcolor="orange" width="100">ë²ˆí˜¸</th>
+				<th bgcolor="orange" width="200">ì œëª©</th>
+				<th bgcolor="orange" width="150">ìž‘ì„±ìž</th>
+				<th bgcolor="orange" width="150">ë‚ ì§œ</th>
+				<th bgcolor="orange" width="100">ì¡°íšŒìˆ˜</th>
 			</tr>
 			<c:forEach items="${boardList }" var="board">
 				<tr>
@@ -31,6 +31,6 @@
 				</tr>
 			</c:forEach>
 		</table>
-		<br> <a href="insertBoard.do">»õ±Û µî·Ï</a>
+		<br> <a href="insertBoard.do">ê²Œì‹œê¸€ ìž…ë ¥</a>
 </body>
 </html>

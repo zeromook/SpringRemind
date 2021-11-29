@@ -44,4 +44,8 @@ public class HelloController {
 		return mv;
 	}
 	
+	@RequestMapping("sample")
+	public void sample() {
+		System.out.println("복습을 합시다");
+	}
 }

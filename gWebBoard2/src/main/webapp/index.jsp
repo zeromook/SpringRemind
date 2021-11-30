@@ -17,6 +17,12 @@
 		
 		<hr>
 		<br>
-
+		
+		<a href="sample/test.do">샘플(상대경로)</a><br>
+		<a href="/sample/test.do">샘플(절대경로)</a>
+		
+		
+		
+		
 </body>
 </html>

@@ -1,4 +1,5 @@
 <%@page contentType="text/html; charset=UTF-8"%>
+<%String proName = "/Sample"; %>
 <!DOCTYPE html>
 <html>
 <head>
@@ -19,7 +20,7 @@
 		<br>
 		
 		<a href="sample/test.do">샘플(상대경로)</a><br>
-		<a href="/sample/test.do">샘플(절대경로)</a>
+		<a href="<%=proName%>/sample/test.do">샘플(절대경로)</a>
 		
 		
 		

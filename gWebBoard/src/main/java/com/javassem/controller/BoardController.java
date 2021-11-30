@@ -1,7 +1,9 @@
 package com.javassem.controller;
 
 import java.util.Date;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
@@ -30,8 +32,11 @@ public class BoardController {
 	
 	//글목록 보기
 	@RequestMapping("getBoardList.do")
-	public void select(Model m) {
-		List<BoardVO> list = boardService.getBoardList();
+	public void select(String searchCondition,String searchKeyword,Model m) {
+		Map mp = new HashMap();
+		mp.put("searchCondition",searchCondition);
+		mp.put("searchKeyword",searchKeyword);
+		List<BoardVO> list = boardService.getBoardList((HashMap) mp);
 		m.addAttribute("boardList",list);
 	}
 	

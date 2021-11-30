@@ -44,13 +44,16 @@
 		]]>
 	</select>
 	
-	<select id="getBoardList" resultType="board" >
+<!-- 	<select id="getBoardList" resultType="board" >
 			SELECT *
 			FROM BOARD
 			ORDER BY SEQ DESC
-	</select>
+	</select> -->
+	<!-- 검색 추가 
 	
-<!-- 	<select id="getBoardList" resultType="board"  parameterType="hashmap">
+		# = preparedStatement를 사용할때 -> 문자열인 경우 자동으로 ''가 붙음
+		$ = Statement를 사용 -> 문자열인 경우도 ''가 붙지않음-->
+ 	<select id="getBoardList" resultType="board"  parameterType="hashmap">
 		
 		SELECT *
 		FROM BOARD
@@ -62,5 +65,5 @@
 		ORDER BY SEQ DESC
 		
 	</select>
-	 -->
+	
 </mapper>

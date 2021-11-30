@@ -10,7 +10,17 @@
 </head>
 <body>
 		<h1>목록보기</h1>
-
+	<!-- 검색부분 추가 -->
+	<form action="getBoardList.do" method='get'>
+		<select name='searchCondition'>
+			<option value="title">제목</option>
+			<option value='content'>내용</option>
+			<option value='writer'>작성자</option>
+		</select>
+		<input type="text" name='searchKeyword'>
+		<input type="submit" value='검색'>
+	</form>
+		
 		
 	<table border="1">
 			<tr>

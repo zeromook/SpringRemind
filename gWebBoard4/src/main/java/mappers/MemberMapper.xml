@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="user">
+
+<insert id="userInsert" parameterType="MemberVO">
+	INSERT INTO MEMBERTEST(USERID,USERPASS,USERNAME)
+	VALUES (#{userId},#{userPass},#{userName})
+</insert>
+
+
+<select id="idCheck" parameterType="MemberVO" resultType="MemberVO">
+	SELECT * FROM MEMBERTEST
+	<where>
+		<if test="userId != null">
+			USERID = #{userId}
+		</if>
+		<if test="userPass != null">
+			and USERPASS=#{userPass}
+		</if>
+	</where>
+</select>
+
+
+</mapper>
